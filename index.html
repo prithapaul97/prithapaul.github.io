@@ -2,129 +2,471 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pritha Paul</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-            line-height: 1.6;
-        }
+    <meta
+        name="description"
+        content="Personal academic website of Pritha Paul, cosmologist and astrophysicist."
+    >
 
-        header {
-            background: #172033;
-            color: white;
-            text-align: center;
-            padding: 70px 20px;
-        }
+    <title>Pritha Paul | Cosmology</title>
 
-        header h1 {
-            margin: 0;
-            font-size: 46px;
-        }
-
-        header p {
-            font-size: 20px;
-        }
-
-        nav {
-            background: white;
-            text-align: center;
-            padding: 16px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        nav a {
-            margin: 0 14px;
-            color: #172033;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Pritha Paul</h1>
-    <p>Astrophysicist and Cosmologist</p>
-</header>
+    <!-- Navigation -->
+    <header class="site-header">
+        <a class="site-name" href="#home">PRITHA PAUL</a>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-</nav>
+        <button
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
 
-<main>
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#talks">Talks</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
 
-        <p>
-            I am an astrophysicist working on relativistic effects,
-            large-scale structure and observational cosmology.
-        </p>
-    </section>
+    <!-- Hero -->
+    <main>
 
-    <section id="research">
-        <h2>Research</h2>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
 
-        <p>
-            My research focuses on relativistic signatures in galaxy
-            clustering, higher-order statistics and cosmological
-            perturbation theory.
-        </p>
-    </section>
+            <div class="hero-content">
+                <p class="eyebrow">
+                    Astrophysics · Cosmology · Large-Scale Structure
+                </p>
 
-    <section id="publications">
-        <h2>Publications</h2>
+                <h1>Pritha Paul</h1>
 
-        <p>
-            My publications and current research projects will be added here.
-        </p>
-    </section>
+                <p class="hero-subtitle">
+                    Postdoctoral Researcher in Cosmology
+                </p>
 
-    <section id="contact">
-        <h2>Contact</h2>
+                <p class="hero-institution">
+                    Ludwig-Maximilians-Universität München
+                </p>
 
-        <p>
-            Email:
-            <a href="mailto:pritha.paul@lmu.de">
-                pritha.paul@lmu.de
+                <div class="hero-buttons">
+                    <a class="button button-primary" href="#research">
+                        Explore my research
+                    </a>
+
+                    <a class="button button-outline" href="#publications">
+                        View publications
+                    </a>
+                </div>
+            </div>
+
+            <a class="scroll-indicator" href="#about" aria-label="Scroll to About">
+                <span>Scroll</span>
+                <span class="scroll-line"></span>
             </a>
-        </p>
-    </section>
+        </section>
 
-</main>
 
-<footer>
-    <p>&copy; 2026 Pritha Paul</p>
-</footer>
+        <!-- About -->
+        <section class="section section-dark" id="about">
+            <div class="section-inner about-grid">
+
+                <div class="portrait-column">
+
+                    <!--
+                    This placeholder will remain until you upload profile.jpg.
+
+                    After uploading profile.jpg, remove the profile-placeholder
+                    div and uncomment the img element below.
+                    -->
+
+                    <div class="profile-placeholder">
+                        <span>PP</span>
+                        <p>Portrait coming soon</p>
+                    </div>
+
+                    <!--
+                    <img
+                        class="profile-image"
+                        src="images/profile.jpg"
+                        alt="Portrait of Pritha Paul"
+                    >
+                    -->
+
+                </div>
+
+                <div class="about-content">
+                    <p class="section-label">About</p>
+
+                    <h2>
+                        Exploring the Universe through its
+                        large-scale structure
+                    </h2>
+
+                    <p class="large-text">
+                        I am a cosmologist studying the distribution of matter
+                        across the Universe and the information encoded in
+                        galaxy surveys.
+                    </p>
+
+                    <p>
+                        My research focuses on relativistic effects,
+                        wide-angle corrections, higher-order statistics and
+                        observational signatures that can help us test gravity
+                        and cosmology on the largest scales.
+                    </p>
+
+                    <p>
+                        I am currently based at the University Observatory of
+                        Ludwig-Maximilians-Universität München.
+                    </p>
+
+                    <div class="link-row">
+                        <a href="#publications">Publications</a>
+                        <a href="#contact">Contact me</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Research introduction -->
+        <section class="section research-intro" id="research">
+            <div class="section-inner narrow">
+
+                <p class="section-label">Research</p>
+
+                <h2>
+                    Relativistic signatures in cosmological observations
+                </h2>
+
+                <p class="large-text">
+                    I investigate how velocities, projection effects and
+                    relativistic corrections influence cosmological
+                    observables such as the power spectrum, bispectrum and
+                    trispectrum.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Research item 1 -->
+        <section class="research-panel">
+
+            <div class="research-image">
+                <img
+                    src="images/Research-1.jpg"
+                    alt="Illustration of an observed galaxy cluster distorted by Newtonian and relativistic effects"
+                >
+            </div>
+
+            <div class="research-content">
+                <p class="section-label">01</p>
+
+                <h3>
+                    Relativistic effects in large-scale structure
+                </h3>
+
+                <p>
+                    Galaxy surveys observe light arriving along the past
+                    lightcone. This means that the observed distribution of
+                    galaxies includes velocity, lensing, gravitational and
+                    projection effects in addition to the underlying density.
+                </p>
+
+                <p>
+                    My work studies how these contributions modify the shapes
+                    and symmetries of cosmological observables.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Research item 2 -->
+        <section class="research-panel research-panel-reverse">
+
+            <div class="research-image">
+                <img
+                    src="images/Research-2.jpg"
+                    alt="Plot showing even and odd contributions to a cosmological trispectrum"
+                >
+            </div>
+
+            <div class="research-content">
+                <p class="section-label">02</p>
+
+                <h3>
+                    Higher-order statistics
+                </h3>
+
+                <p>
+                    The bispectrum and trispectrum contain information that
+                    cannot be captured by the two-point function alone.
+                </p>
+
+                <p>
+                    I study relativistic contributions to these higher-order
+                    correlations, including odd-parity and apparently
+                    parity-violating signatures generated by observational
+                    effects.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Research item 3 -->
+        <section class="research-panel">
+
+            <div class="research-image">
+                <img
+                    src="images/Research-3.jpg"
+                    alt="Mirrored galaxy configuration illustrating parity transformation"
+                >
+            </div>
+
+            <div class="research-content">
+                <p class="section-label">03</p>
+
+                <h3>
+                    Symmetry, parity and cosmological geometry
+                </h3>
+
+                <p>
+                    Symmetry provides a powerful way to separate physical
+                    signals from observational effects.
+                </p>
+
+                <p>
+                    I investigate how line-of-sight geometry, wide-angle
+                    effects and relativistic corrections generate signatures
+                    that change under parity transformations.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Publications -->
+        <section class="section publications-section" id="publications">
+            <div class="section-inner">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Selected work</p>
+                        <h2>Publications</h2>
+                    </div>
+
+                    <p>
+                        Research on relativistic effects, wide-angle
+                        corrections and higher-order cosmological statistics.
+                    </p>
+                </div>
+
+
+                <article class="publication">
+                    <div class="publication-number">01</div>
+
+                    <div>
+                        <h3>
+                            Relativistic and wide-angle corrections to
+                            cosmological clustering
+                        </h3>
+
+                        <p>
+                            Modelling observational effects beyond the
+                            plane-parallel approximation.
+                        </p>
+
+                        <div class="publication-links">
+                            <a href="#" aria-label="Add journal link">
+                                Journal
+                            </a>
+
+                            <a href="#" aria-label="Add arXiv link">
+                                arXiv
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="publication">
+                    <div class="publication-number">02</div>
+
+                    <div>
+                        <h3>
+                            Parity and relativistic signatures in the
+                            cosmological trispectrum
+                        </h3>
+
+                        <p>
+                            Exploring odd-parity contributions generated by
+                            lightcone and projection effects.
+                        </p>
+
+                        <div class="publication-links">
+                            <a href="#" aria-label="Add journal link">
+                                Journal
+                            </a>
+
+                            <a href="#" aria-label="Add arXiv link">
+                                arXiv
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="publication">
+                    <div class="publication-number">03</div>
+
+                    <div>
+                        <h3>
+                            Multi-tracer probes of relativistic Doppler effects
+                        </h3>
+
+                        <p>
+                            Using multiple tracers to enhance large-scale
+                            relativistic signals.
+                        </p>
+
+                        <div class="publication-links">
+                            <a href="#" aria-label="Add journal link">
+                                Journal
+                            </a>
+
+                            <a href="#" aria-label="Add arXiv link">
+                                arXiv
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <div class="profile-links">
+                    <a href="#" class="button button-outline">
+                        Google Scholar
+                    </a>
+
+                    <a href="#" class="button button-outline">
+                        ORCID
+                    </a>
+
+                    <a href="#" class="button button-outline">
+                        arXiv
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Talks -->
+        <section class="section talks-section" id="talks">
+            <div class="section-inner narrow">
+
+                <p class="section-label">Talks and teaching</p>
+
+                <h2>
+                    Communicating cosmology
+                </h2>
+
+                <p class="large-text">
+                    I present my research at seminars, workshops and
+                    conferences, and I have taught undergraduate mathematics
+                    and physics.
+                </p>
+
+                <p>
+                    A list of selected talks, conference presentations and
+                    teaching activities will be added here.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-background"></div>
+
+            <div class="section-inner contact-content">
+                <p class="section-label">Contact</p>
+
+                <h2>Let’s talk about cosmology.</h2>
+
+                <p>
+                    For research discussions, collaborations and seminar
+                    invitations, please get in touch.
+                </p>
+
+                <a
+                    class="email-link"
+                    href="mailto:pritha.paul@lmu.de"
+                >
+                    pritha.paul@lmu.de
+                </a>
+
+                <div class="social-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Google Scholar</a>
+                    <a href="#">ORCID</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>© 2026 Pritha Paul</p>
+
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+
+    <script>
+        const menuButton = document.querySelector(".menu-button");
+        const navigation = document.querySelector(".navigation");
+
+        menuButton.addEventListener("click", () => {
+            const isOpen = navigation.classList.toggle("navigation-open");
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
+            );
+        });
+
+        document.querySelectorAll(".navigation a").forEach((link) => {
+            link.addEventListener("click", () => {
+                navigation.classList.remove("navigation-open");
+                menuButton.setAttribute("aria-expanded", "false");
+            });
+        });
+    </script>
 
 </body>
 </html>
